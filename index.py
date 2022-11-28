@@ -14,7 +14,7 @@ pyautogui.hotkey("ctrl", "v")
 pyautogui.press("enter")
 time.sleep(3)
 
-pyautogui.click(x=487, y=451, clicks=3)
+pyautogui.click(x=487, y=451, clicks=4)
 time.sleep(1)
 pyautogui.click(x=495, y=584)
 time.sleep(1)
@@ -40,10 +40,14 @@ pyautogui.click(x=237, y=181)
 time.sleep(1)
 pyautogui.click(x=463, y=249)
 pyautogui.write("fabiodanille@hotmail.com")
+time.sleep(1)
 pyautogui.press("tab")
 pyautogui.press("tab")
+
+time.sleep(1)
 pyperclip.copy("Relatório de Vendas")
 pyautogui.hotkey("ctrl", "v")
+
 pyautogui.press("tab")
 
 texto = f"""Prezados,
@@ -56,7 +60,7 @@ Fico à disposição,
 AT.TE.,
 Fabio Danille
 """
-
+time.sleep(1)
 pyperclip.copy(texto)
 pyautogui.hotkey("ctrl","v")
 
